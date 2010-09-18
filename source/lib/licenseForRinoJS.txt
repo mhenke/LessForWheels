@@ -1,0 +1,8 @@
+License
+
+Rhino is open source. 
+See Rhino license for information on Rhino's licensing.
+https://developer.mozilla.org/en/Rhino_License
+
+The source code for Rhino is available under MPL 1.1/GPL 2.0 license.
+http://www.mozilla.org/MPL/
