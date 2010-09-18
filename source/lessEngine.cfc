@@ -5,8 +5,18 @@
 	</cffunction>
 	
 	<cffunction name="LessEngine" returntype="Any" access="public" output="false"  hint="I return the javaloader object ready for you to create ???">
-		
+
 		<cfscript>
+			var loadPathsArray = ArrayNew(1);
+			var temp =
+				ArrayAppend(
+				loadPathsArray, 
+				 ReturnWebRootTranslated2() & "/plugins/lessengine/lib/js.jar");
+		   	var temp2 =
+				ArrayAppend(
+				loadPathsArray, 
+				ReturnWebRootTranslated2() & "/plugins/lessengine/lib/lesscss-engine-1.0.22.jar");
+			var myJavaLoader = application.javaLoader.init(loadPathsArray);
 			var lessEngine = getLessEngine();
 			var lessFileArrayComplete = getLessFiles();
 			var generate = generateFiles(lessEngine,lessFileArrayComplete);

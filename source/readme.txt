@@ -12,32 +12,20 @@ Requires:
 # http://github.com/mhenke/javaloaderCFWheels
  
 TO USE
-1) Create a lib folder for your jar files under your webroot
-	Exampe Of Directory Layout:
-	webroot
-	==index.cfm
-	==IsapiRewrite4.ini
-	==Application.cfc
-	====wheels
-	====views
-	====models
-	====events
-	====controllers
-	====lib
-l
-2) Place the lesscss-engine-X.X.XX.jar in the lib folder you added in step 1.
+1) Place the LessEngine-X.X.zip in your plugins folder
 
-3) Place the JavaLoader-xx.xx.zip in the plugins folder of Wheels.
+2) Make sure you have the JavaLoader-xx.xx.zip installed.
+http://github.com/mhenke/javaloaderCFWheels
 
 4) Add to events/onapplicationstart.cfm this code 
-	a)for loading any default jars
-		<cfset application.javaloader = javaLoader() />
+	<cfset application.javaloader = javaLoader() />
+	<cfset doLessGeneration = LessEngine() />
 
-You should be good to go now and able to access the jar.
+You should be good to go now and generate css files from less files.
 
 EXAMPLES OF USE
-<!--- example of creating java object--->
-<cfset jTidy = application.javaloader.create("org.w3c.tidy.Tidy").init() />
+Create your less files in /stylesheets/less
+On Application Start your less files will be generated and created in the stylesheets folder
  
 ADDITIONAL FOR DEMO 
 Unzip the Demo-x.x.zip file into CFWheel's webroot.
