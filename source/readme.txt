@@ -17,9 +17,12 @@ TO USE
 2) Make sure you have the JavaLoader-xx.xx.zip installed.
 http://github.com/mhenke/javaloaderCFWheels
 
-4) Add to events/onapplicationstart.cfm this code 
+3) Add to events/onapplicationstart.cfm this code 
 	<cfset application.javaloader = javaLoader() />
 	<cfset doLessGeneration = LessEngine() />
+
+4) Reload your Wheels application.
+Example: http://localhost/index.cfm?reload=true
 
 You should be good to go now and generate css files from less files.
 
@@ -31,4 +34,4 @@ ADDITIONAL FOR DEMO
 Unzip the Demo-x.x.zip file into CFWheel's webroot.
  
 Reload your Wheels application.
-Example: http://localhost/index.cfm?reload=true
+Example: http://localhost/less/show?reload=true

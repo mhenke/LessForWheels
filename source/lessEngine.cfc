@@ -1,4 +1,4 @@
-<cfcomponent output="false">
+<cfcomponent output="false" dependency="javaloader" mixin="application">
 	 <cffunction name="init">
 		<cfset this.version = "1.0.5">
 		<cfreturn this>
