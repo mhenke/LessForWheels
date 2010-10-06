@@ -1,7 +1,10 @@
-CFWheels plugin for LESS v0.1
+CFWheels plugin for LESS v0.3
 http://github.com/mhenke/lessForWheels
 
-Third party software:
+Dependancy:
+http://cfwheels.org/plugins/listing/27
+
+Third party software used:
 http://javaloader.riaforge.org/
 http://www.mozilla.org/rhino/
 http://www.asual.com/lesscss/

@@ -1,1 +1,1 @@
-see readme,txt in source
+see readme,txt at http://github.com/mhenke/LessForWheels/blob/master/source/readme.txt
